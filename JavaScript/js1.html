@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>JS1</title>
+</head>
+<body>
+    
+    <script>
+        //variabel
+        var a = 29; // Global Variable
+        console.log(a);
+        document.write("<h1>"+a+"</h1>");
+
+        let b = 26; // Block Scope Variable
+        console.log(b);
+        document.write("<h1>"+b+"</h1>");
+
+        const c = 56; // Constant Variable
+        console.log(c);
+        document.write("<h1>"+c+"</h1>");
+
+        a = 290;
+        console.log(a);
+
+        b = 260;
+        console.log(b);
+
+        // c = 560;
+        // console.log(c);
+
+        var a = 150;
+        console.log(a);
+
+        // let b = 120; name cannot be overwrite
+        // console.log();
+
+        // const c = 555; const cannot be overwrite
+        // console.log(c);
+
+        if(a == 150){
+            var numb1 = 20;
+            let numb2 = 30;
+            console.log(numb1,numb2);
+        }
+        console.log(numb1);
+        // console.log(numb2); block scope
+        
+    </script>
+</body>
+</html>

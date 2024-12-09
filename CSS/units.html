@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+</head>
+<style>
+    button {
+        border: 1px solid black;
+        padding: 10px 300px;
+    }
+    .container{
+        margin-top: 20px;
+        width: 100%;
+        background-color: rebeccapurple;
+    }
+    .box{
+        width: 50%;
+        padding: 2%;
+        background-color: gray;
+    }
+    .em-container{
+        font-size: 20px;
+    }
+    .normal-text{
+        font-size: 1em;
+    }
+    .large-text{
+        font-size: 2em;
+    }
+    .em-box{
+        font-size: 20px;
+    }
+    .em-box p{
+        border: 1px solid black;
+        padding: 1em;
+        margin: 2em;
+    }
+    /* rem */
+    html{
+        font-size: 16px;
+    }
+    .header{
+        font-size: 1rem;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .description{
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    /* vw vh view port width, view port height  */
+    .vw-container{
+        width: 100vw;
+        height: 50px;
+        background-color: lightblue;
+    }
+    .fullscreen-header{
+        height: 100vh;
+        background-color: lightcoral;
+    }
+</style>
+<body>
+    <button>save</button>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+    <!-- em -->
+     <div class="em-container">
+        <p class="normal-text">Normal Text</p>
+        <p class="large-text">Large Text</p>
+     </div>
+
+     <div class="em-box">
+        <p>box content</p>
+     </div>
+
+     <!-- rem -->
+      <div class="header">
+        <p class="title">Title</p>
+        <p class="description">This is REM.</p>
+      </div>
+
+      <!-- vw view port width  -->
+       <div class="vw-container">
+        <p>This is viewport width.</p>
+       </div>
+
+       <!-- vh veiw port height  -->
+        <header class="fullscreen-header">
+            <p>This is header takes up 100vh</p>
+        </header>
+        ˜
+</body>
+</html>

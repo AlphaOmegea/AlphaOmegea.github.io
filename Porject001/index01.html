@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautyO'Clock</title>
+    <link rel="stylesheet" href="CSS/testStyles.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+</head>
+<body>
+    <div id="page" class="site">
+        <header class="website-header" style="background-image: url('CSS/images/heroImage.png')">
+            <div class="nav-btn">
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="menu_icon_box">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                        <div class="box">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#service">Services</a></li>
+                                    <li><a href="#">Price List</a></li>
+                                    <li><a href="#">Booking</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <a class="custom-logo-link" href=""><img class="logo-on-black on" width="340" src="CSS/images/logo.jpeg"></a>
+            <div class="service-container">
+                <div class="service-text">
+                    <h3>We are here to fullfill your dreams</h3>
+                    <a href="" class="btn">Booking Now</a>
+                </div>
+            </div>
+            <!-- Our Service -->
+             <div class="background">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1 class="our-service-title" id="service">Our Services</h1>
+                    <div class="our-service">
+              
+                      <div class="service">
+                          <img src="CSS/images/colors1.jpg" alt="" class="item-image">
+                          <div class="service-content">
+                              <p class="item-name">COLOR</p>
+                          </div>
+                      </div>
+              
+                      <div class="service">
+                          <img src="CSS/images/hairCut.jpg" alt="" class="item-image">
+                          <div class="service-content">
+                              <p class="item-name">HAIR CUT</p>
+                          </div>
+                      </div>
+              
+                      <div class="service">
+                          <img src="CSS/images/eyebrow.jpg" alt="" class="item-image">
+                          <div class="service-content">
+                              <p class="item-name">EYEBROW TATTOO</p>
+                          </div>
+                      </div>
+              
+                      <div class="service">
+                          <img src="CSS/images/tattoo.jpg" alt="" class="item-image">
+                          <div class="service-content">
+                              <p class="item-name">MINI TATTOO</p>
+                          </div>
+                      </div>
+              
+                      <div class="service">
+                          <img src="CSS/images/nail.jpg" alt="" class="item-image">
+                          <div class="service-content">
+                              <p class="item-name">NAIL SPA</p>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="view-more">
+                          <a href="" class="btn">View More</a>
+                      </div>
+                </div>
+             </div>
+             <!-- Contact Us -->
+             <div class="background">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="contact-us" id="contact">
+                        <h1>Contact Us</h1>
+                        <div class="row">
+                            <div class="col">
+                                <img src="CSS/images/logo.jpeg" class="logo">
+                                <p class="lofont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laborum dolorum nulla ipsam temporibus doloremque recusandae unde. Tenetur tempora optio placeat nisi amet nulla dolores.</p>
+                            </div>
+                            <div class="col">
+                                <div class="lofont">
+                                    <h3>Address</h3>
+                                    <p>General St.</p>
+                                    <p>Ahtaung Township</p>
+                                    <p>Ayeyarwady</p>
+                                    <p class="email-id">beautyoclock@gmail.com</p>
+                                    <h4>+959963134402</h4>
+                                </div>                             
+                            </div>
+                            <div class="col">
+                                <div class="lofont">
+                                    <h3>Nevigate</h3>
+                                    <ul>
+                                        <li><a href="">Home</a></li>
+                                        <li><a href="#service">Service</a></li>
+                                        <li><a href="">Price List</a></li>
+                                        <li><a href="">Booking</a></li>
+                                        <li><a href="">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="lofont">
+                                    <h3>Newsletter</h3>
+                                    <form action="">
+                                        <i class="far fa-envelope"></i>
+                                        <input type="email" placeholder="Enter your email: ">
+                                        <button type="submit">></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+    </div>
+
+     <!-- footer -->
+     <footer class="footer">
+        <p>
+            &copy;Copyright
+            <span class="footer-title">BeautyO'Clock.</span>
+            All Right Reserved
+        </p>
+        <p>Design By <a href="" target="_blank" class="dev">PYAE</a></p>
+     </footer>
+    <script>
+        let menu_icon_box = document.querySelector(".menu_icon_box");
+        let box = document.querySelector(".box");
+
+        menu_icon_box.onclick = function(){
+            menu_icon_box.classList.toggle("active");
+            box.classList.toggle("active");
+        }
+        document.onclick = function(e){
+            if(!menu_icon_box.contains(e.target) && !box.contains(e.target)){
+                menu_icon_box.classList.remove("active");
+                box.classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>
